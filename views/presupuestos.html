@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Presupuestos</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <meta name="description" content="Portafolio de Pablo Rodriguez. Proyecto final HTML/CSS">
+        <meta name ="author" content="Pablo Rodriguez">
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <img src="../images/logo.png" alt="logotipo">
+                <h1>BluePixel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./presupuestos.html">Presupuestos</a></li>
+                    <li><a href="/views/productos.html">Productos</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="presupuestos">
+        <h1>Solicita tu presupuesto</h1>
+        <p>
+         En <span class="blue-text">BluePixel</span> ofrecemos soluciones web personalizadas para cada cliente. 
+         Rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible 
+         para enviarte un presupuesto adaptado a tus necesidades.
+        </p>
+
+        <!-- Sección de ventajas -->
+        <section class="ventajas">
+            <h2>¿Por qué elegir BluePixel?</h2>
+                <ul>
+                    <li>💡 <strong>Asesoría gratuita:</strong> te ayudamos a definir lo que necesitas.</li>
+                    <li>⚡ <strong>Respuesta rápida:</strong> recibirás tu presupuesto en menos de 48 horas.</li>
+                    <li>📈 <strong>Soluciones personalizadas:</strong> adaptadas a tu idea y tu presupuesto.</li>
+                    <li>🤝 <strong>Sin compromiso:</strong> solicita tu presupuesto y decide con calma.</li>
+                </ul>
+        </section>
+
+    <!-- Formulario -->
+            <section>
+                <h1>Contactame</h1>
+                <p>Si deseas ponerte en contacto conmigo, completa el siguiente formulario y te respondere lo antes posible:</p>
+            
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Nombre completo:</label>
+                    <input type="text" id="name" name="name" placeholder="Escribe tu nombre" requiered>
+
+                    <label for="email">Correo electronico:</label>
+                    <input type="email" id="email" placeholder="ejemplo@gmail.com" requiered>
+
+                    <label for="phone">Telefono:</label>
+                    <input type="text" id="phone" name="subject" placeholder="Numero de Telefono" requiered>
+            
+                    <label for="message">Solicite mas información:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aqui..." requiered></textarea>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+    </main>
+    <footer>
+            <p>&copy;2025 BluePixel. Todos los derechos reservados</p>
+            <img src="../images/logo-insta.png" alt="Logo Instagram">
+            <img src="../images/logoX.png" alt="Logo X">
+    </footer>
+</body>
+</html>
