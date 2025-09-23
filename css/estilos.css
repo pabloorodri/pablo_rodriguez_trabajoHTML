@@ -82,6 +82,7 @@ main h2 {
 }
 
 main .blue-text {
+  flex: auto;
   color: #1e90ff;
   font-weight: bold;
 }
@@ -121,9 +122,22 @@ main .blue-text {
   animation: typing 3s steps(30, end) forwards, blink 0.8s step-end infinite;
 }
 .cookie-banner a {
-  color: #1e90ff;
-  text-decoration: underline;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0a0a23;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  z-index: 9999; /* se asegura de estar arriba */
 }
+
+
 
 .accept-btn {
   background: #1e90ff;
@@ -135,6 +149,10 @@ main .blue-text {
   cursor: pointer;
   transition: background 0.3s ease;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .accept-btn:hover {
   background: #0a73d1;
@@ -143,6 +161,7 @@ main .blue-text {
 /* ===== Footer ===== */
 footer {
   background-color: #0a0a23;
+  margin-bottom: 60px; /* espacio para el banner de cookies */
   color: #ffffff;
   text-align: center;
   padding: 15px 10px;
@@ -232,6 +251,11 @@ footer img {
   border-radius: 6px;
   font-size: 1rem;
   transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+nav a.active {
+  color: #1e90ff;
+  font-weight: bold;
+  border-bottom: 2px solid #1e90ff;
 }
 
 .contact-form input:focus,
